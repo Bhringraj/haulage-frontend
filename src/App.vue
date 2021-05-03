@@ -1,18 +1,25 @@
 <template>
 <div :class="[darkClass, theme]">
   <h1>Haulage App</h1>
-  <Button name="simple">Text content</Button>
+  <!-- <Button name="simple">Text content</Button> -->
+  <temp />
+  <themeswitch :themes=themes ><template v-slot:before>h</template><template v-slot:after>j</template></themeswitch>
 </div>
 
 </template>
 
 <script>
-import Button from './components/buttons/button.vue'
+// import Button from './components/buttons/button.vue'
+import temp from './components/temp.vue'
+import themeswitch from './components/themeswitcher/switch.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Button,
+    // Button,
+    temp,
+    themeswitch
   },
   mounted() {
     this.getClass()
@@ -21,13 +28,14 @@ export default {
     return {
       darkMode: false,
       darkClass: '',
-      theme: ''
+      theme: '',
+      themes: ['theme-neon', 'theme-swiss', 'default']
     }
   },
   methods: {
     getClass() {
       this.darkClass = this.darkMode ? 'dark' : ''
-      this.theme = 'theme-neon'
+      this.theme = ''
     }
   },
 }

@@ -1,3 +1,12 @@
+function withOpacity(variableName) {
+  return ({ opacityValue }) => {
+    if (opacityValue !==undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`
+    }
+    return `rgb(var(${variableName}))`
+  }
+}
+
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: 'class', // or 'media' or 'class'
@@ -5,22 +14,30 @@ module.exports = {
     extend: {
       textColor: {
         skin: {
-          base: 'var(--color-text-base)',
-          muted: 'var(--color-text-muted)',
-          inverted: 'var(--color-text-inverted)',
+          base: withOpacity('--color-text-base'),
+          muted: withOpacity('--color-text-muted'),
+          inverted: withOpacity('--color-text-inverted'),
         }
       },
       backgroundColor: {
         skin: {
-          fill: 'var(--color-fill)',
-          'button-accent': 'var(--color-button-accent)',
-          'button-accent-hover': 'var(--color-button-accent-hover)',
-          'button-muted': 'var(--color-button-muted)',
-        }
+          fill: withOpacity('--color-fill'),
+          'button-accent': withOpacity('--color-button-accent'),
+          'button-accent-hover': withOpacity('--color-button-accent-hover'),
+          // 'button-muted': 'var(--color-button-muted)',
+          'button-muted': withOpacity('--color-button-muted'),
+          // 'button-muted': ({ opacityValue }) => {
+          // `rgba(var(--color-button-muted), ${opacityValue})`
+          //   if (opacityValue !== undefined) {
+          //     return `rgba(var(--color-button-muted), ${opacityValue})`
+          //   }
+          //   return `rgb(var(--color-button-muted))`
+          // },
+        },
       },
       gradientColorStops: {
         skin: {
-          hue: 'var(--color-fill)'
+          hue: withOpacity('--color-fill')
         }
       }
     },
