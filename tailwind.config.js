@@ -17,6 +17,10 @@ module.exports = {
           base: withOpacity('--color-text-base'),
           muted: withOpacity('--color-text-muted'),
           inverted: withOpacity('--color-text-inverted'),
+        },
+        alerts: {
+          base: withOpacity('--color-text'),
+          muted: withOpacity('--color-text-muted'),
         }
       },
       backgroundColor: {
@@ -24,20 +28,29 @@ module.exports = {
           fill: withOpacity('--color-fill'),
           'button-accent': withOpacity('--color-button-accent'),
           'button-accent-hover': withOpacity('--color-button-accent-hover'),
-          // 'button-muted': 'var(--color-button-muted)',
           'button-muted': withOpacity('--color-button-muted'),
-          // 'button-muted': ({ opacityValue }) => {
-          // `rgba(var(--color-button-muted), ${opacityValue})`
-          //   if (opacityValue !== undefined) {
-          //     return `rgba(var(--color-button-muted), ${opacityValue})`
-          //   }
-          //   return `rgb(var(--color-button-muted))`
-          // },
         },
+        alerts: {
+          base: withOpacity('--color-base'),
+          muted: withOpacity('--color-muted'),
+          'base-dark': withOpacity('--color-base-dark'),
+          'base-darker': withOpacity('--color-base-darker'),
+        }
       },
       gradientColorStops: {
         skin: {
           hue: withOpacity('--color-fill')
+        }
+      },
+      borderColor: {
+        skin: {
+          fill: withOpacity('--color-fill'),
+          'accent': withOpacity('--color-button-accent'),
+          'accent-hover': withOpacity('--color-button-accent-hover'),
+          'muted': withOpacity('--color-button-muted'),
+        },
+        alerts: {
+          base: withOpacity('--color-base'),
         }
       }
     },

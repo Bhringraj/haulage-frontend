@@ -1,16 +1,19 @@
 <template>
     <cardheader />
+    <cards />
     <cardfooter />
 </template>
 
 <script>
-import cardheader from './card-header'
-import cardfooter from './card-footer'
+import cardheader from './card-header.vue'
+import cardfooter from './card-footer.vue'
+import cards from './cards.vue'
 
 export default {
     components: {
         cardheader,
-        cardfooter
+        cardfooter,
+        cards
     }
     
 }

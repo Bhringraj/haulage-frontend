@@ -1,16 +1,16 @@
 <template>
     <div class="sm:m-6 space-y-6">
-        <div class="relative bg-skin-fill max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
+        <div class="relative bg-skin-fill dark:bg-gray-800 max-w-4xl mx-auto overflow-hidden sm:rounded-2xl">
             <img 
                 class="absolute inset-0 h-full w-full object-cover opacity-30"
                 src="https://images.unsplash.com/photo-1613217784112-e0e197be6a0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWd1fHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80&sat=-100" alt="People working">
             <div class="absolute inset-0 bg-gradient-to-br from-skin-hue via-skin-hue to-transparent opacity-90"></div>
             <div class="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-extrabold text-skin-base sm:text-4xl">
+                <h2 class="text-3xl font-extrabold text-skin-base dark:text-gray-700 sm:text-4xl">
                     <span class="block">Focus</span>
                     <span class="block">Learn</span>
                 </h2>
-                <p class="mt-4 text-lg leading-6 text-skin-muted">
+                <p class="mt-4 text-lg leading-6 text-skin-muted dark:text-gray-600">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique pariatur dolorum quisquam. 
                 </p>
                 <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">

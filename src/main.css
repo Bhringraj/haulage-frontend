@@ -33,4 +33,40 @@
         --color-button-accent-hover: 55, 79, 5;
         --color-button-muted: 212, 255, 122;
     }
+
+    .danger {
+        --color-base: 239, 68, 68;
+        --color-muted: 254, 226, 226;
+        --color-text: 188, 28, 28;
+        --color-text-muted: 239, 68, 68;
+        --color-base-darker: 188, 28, 28;
+        --color-base-dark: 220, 38, 38;
+    }
+
+    .info {
+        --color-base: 59, 130, 246;
+        --color-muted: 219, 234, 254;
+        --color-text: 29, 78, 216;
+        --color-text-muted: 59, 130, 246;
+        --color-base-darker: 29, 78, 216;
+        --color-base-dark: 37, 99, 235;
+    }
+
+    .success {
+        --color-base: 16, 185, 129;
+        --color-muted: 209, 250, 229;
+        --color-text: 6, 78, 59;
+        --color-text-muted: 16, 185, 129;
+        --color-base-darker: 6, 78, 59;
+        --color-base-dark: 5, 150, 105;
+    }
+
+    .warning {
+        --color-base: 245, 158, 11;
+        --color-muted: 254, 243, 199;
+        --color-text: 180, 83, 9;
+        --color-text-muted: 245, 158, 11;
+        --color-base-darker: 180, 83, 9;
+        --color-base-dark: 217, 119, 6;
+    }
 }
