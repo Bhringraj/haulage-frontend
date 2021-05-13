@@ -10,7 +10,7 @@
   </div>
   <div v-else-if="name == 'modern-badge'">
     <div class="bg-alerts-base-darker text-center py-4 lg:px-4">
-      <div class="p-2 bg-alerts-base-dark items-center text-skin-base leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+      <div class="p-2 bg-alerts-base-dark items-center text-skin-base dark:text-gray-800 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
         <span class="flex rounded-full bg-alerts-base uppercase px-2 py-1 text-xs font-bold mr-3"><slot name="title"></slot></span>
         <span class="font-semibold mr-2 text-left flex-auto"><slot name="text"></slot></span>
         <slot name="icon"></slot>
@@ -25,7 +25,7 @@
   </div>
   <div v-else-if="name == 'titled'">
     <div role="alert">
-      <div class="bg-alerts-base text-skin-base font-bold rounded-t px-4 py-2">
+      <div class="bg-alerts-base text-skin-base dark:text-gray-800 font-bold rounded-t px-4 py-2">
         <slot name="title"></slot>
       </div>
       <div class="border border-t-0 border-alerts-base border-opacity-70 rounded-b bg-alerts-muted px-4 py-3 text-alerts-base">
@@ -34,7 +34,7 @@
     </div>
   </div>
   <div v-else-if="name == 'solid'">
-    <div class="flex items-center bg-alerts-base text-skin-base text-sm font-bold px-4 py-3" role="alert">
+    <div class="flex items-center bg-alerts-base text-skin-base dark:text-gray-800 text-sm font-bold px-4 py-3" role="alert">
       <slot name="icon"></slot>
       <slot name="text"></slot>
     </div>
