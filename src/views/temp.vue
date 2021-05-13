@@ -22,11 +22,13 @@
   <!-- <temp class="theme-neon" /> -->
   <themeswitch name="dark" :mode=mode @toggle="toggle" ><template v-slot:before>Light </template><template v-slot:after> Dark</template></themeswitch>
   <themeswitch @default="defaultTheme" @swiss="swissTheme" @neon="neonTheme" />
+  <Foot />
 </div>
 
 </template>
 
 <script>
+import Foot from '@/components/footers/footer.vue'
 import Header from '@/components/headers/header.vue'
 import Button from '@/components/buttons/button.vue'
 import temp from '@/components/temp.vue'
@@ -38,6 +40,7 @@ import alerts from '@/components/alerts/alert.vue'
 export default {
   name: 'App',
   components: {
+    Foot,
     Button,
     temp,
     themeswitch,
