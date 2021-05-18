@@ -1,5 +1,5 @@
 <template>
-<div v-if="name === 'dark'">
+<div class="py-2" v-if="name === 'dark'">
     <div class="my-2 flex items-center justify-center">
         <p class="px-4">
             <slot name="before"></slot>

@@ -20,7 +20,7 @@
                 <slot name="btn2"></slot> 
             </button>
         </div>
-        <button v-else-if="name == 'simple'" class = "text-skin-base dark:text-gray-800 bg-skin-fill hover:bg-skin-button-muted py-3 px-4 text-base font-medium rounded-md shadow-sm">
+        <button v-else-if="name == 'simple'" class = "text-skin-base dark:text-gray-300 bg-skin-fill hover:bg-skin-button-muted py-3 px-4 text-base font-medium rounded-md shadow-sm">
             <slot></slot>
         </button>
         <button v-else-if="name == 'pill'" class = "text-skin-base dark:text-gray-800 bg-skin-fill hover:bg-skin-button-muted py-3 px-4 font-bold rounded-full">

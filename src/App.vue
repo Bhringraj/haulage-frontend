@@ -1,6 +1,5 @@
 <template>
-<temp class="app" />
-
+  <temp class="app" />
 </template>
 
 <script>
